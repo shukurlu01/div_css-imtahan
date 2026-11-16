@@ -99,7 +99,116 @@
     margin: 20px 20px 10px 15px;
     cursor: pointer;
 }
+.swiper {
+    width: 100%;
+    height: 70vh;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #f3f3f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    
+    object-fit: cover;
+}
+.container{
+    background: #f3f3f5;
+}
+.sldbaslig{
+    text-align: left;
+}
+.sldh2{
+    font-size: 34px;
+    line-height: 36px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+.sldp{
+    color: #80858a;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 24px;
+}
+.sldbtn{
+    border: none;
+    margin-right: 16px;
+    padding: 7px 28px;
+    height: 60px;
+    min-width: 40px;
+    width: 40%;
+    background-color: white;
+    color: #ec3342;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.sld-nav {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    z-index: 100;
+}
+.mySwiper {
+    position: relative;
+}
+.sld-prev, .sld-next {
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 12px;
+    background: #fff;
+    color: #b5b5b5;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.sldcards{background: #f3f3f5;}
+.sldcard{
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.cardyazi{
+    display: flex;
+}
+.cardyazih3{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.cardyazip{
+    font-size: 12px;
+    line-height: 16px;
+    color: #80858a;
+    margin: 8px 0 0;
+}
+.cardsekil{display: flex;}
+.cardsekil img{
+    width: 164px;
+    align-self: end;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
 
 
@@ -158,5 +267,91 @@
         justify-content: center;
         border-radius: 6px;
     }
+    .swiper {
+        height: 380px;
+    }
+    .swiper-slide {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 90px;
+        gap: 40px;
+        text-align: left;
+    }
+    .swiper-slide .sldbaslig {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .swiper-slide img {
+        flex: 0 0 45%;
+        width: 45%;
+        max-width: 45%;
+        height: 100%;
+        object-fit: contain;
+        margin-left: auto;
+    }
+    .sldh2 {
+        margin: 0 0 20px;
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: 700;
+    }
+    .sldp {
+        margin: 0 0 24px;
+    }
+    .sldbtn {
+        width: 170px;
+        margin-top: 0;
+    }
+    .sld-nav {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        gap: 0;
+        pointer-events: none;
+    }
 
+    .sld-prev, .sld-next {
+        pointer-events: auto;
+        width: 56px;
+        height: 56px;
+    }
+    
+    #slide{
+        width: 75%;
+        margin: 20px auto;
+    }
+    #sldcards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 24px;
+        padding: 24px;
+        border-radius: 16px;
+    }
+    .sldcard {
+        margin-top: 0;
+        grid-column: span 2;
+    }
+    .sldcard:nth-child(-n+2) {
+        grid-column: span 3;
+    }
+    .sldcard:nth-child(-n+2) .cardsekil img {
+        width: 260px;
+    }
+    .cardsekil img {
+        width: 100%;
+        margin-left: auto;
+    }
+    .cardyazip{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .sldcard:nth-child(n+3) .cardyazip {
+        width: 130px;
+    }
+    
 }
