@@ -5,6 +5,22 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.ndmenu {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    width: 100%;
+}
 .card-body img{
     width: 115px;
     height: 60px;
@@ -115,11 +131,7 @@
 .swiper-slide img {
     display: block;
     width: 100%;
-    
     object-fit: cover;
-}
-.container{
-    background: #f3f3f5;
 }
 .sldbaslig{
     text-align: left;
@@ -178,7 +190,6 @@
     color: #b5b5b5;
     font-size: 28px;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 .sldcards{background: #f3f3f5;}
 .sldcard{
@@ -209,11 +220,88 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+.mobilappbaslig h2{
+    font-size: 2em;
+    line-height: 36px;
+    font-weight: 600;
+    text-align: center;
+    color: #25282b;
+    margin: 0 auto;
+}
+.mobilappbaslig p{
+    font-size: 1.1em;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #25282b;
+    margin-top: 18px;
+    margin-bottom: 40px;
+}
+.appbadgeicon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.appbadge{
+    width: 192px;
+    height: 60px;
+    border-radius: 10px;
+    background: #25282b;
+    padding: 18px 24px;
+}
+.appbadge a{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+.apptextp1{
+    font-weight: 700;
+    font-size: 1.1em;
+    margin: 0;
+    color: white;
+    text-align: left;
+}
+.apptextp2{
+    font-size: .8em;
+    font-weight: 400;
+    margin: 0;
+    color: white;
+}
+.applogo{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+#iphonesekil img{
+    width: 100%;
+    margin-top: 48px;
+}
+.qr{
+    display: none;
+}
+.badges{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 
 
 
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
+    header {
+        position: sticky;
+        top: -50px;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        margin-bottom: 0;
+    }
     .dmenumain2 h3{
         font-size: 14px;
         color: #9496ac;
@@ -227,6 +315,9 @@
     }
     .dmenu{
         height: 45px;
+    }
+    .ndmenu{
+        height: 92px;
     }
     .ndmenu img{
         width: 115px;
@@ -256,16 +347,19 @@
         color: #9496ac;
         margin-left: 12px;
         cursor: pointer;
+        margin-top: 1rem;
     }
     .dmf1xidmetsebekesi{
         background: #ff0039;
         margin-left: 18px;
         font-size: .9em;
-        padding: 0 4px;
+        padding: 8px 10px;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 6px;
+        height: 30px;
+        margin-top: 12px;
     }
     .swiper {
         height: 380px;
@@ -323,7 +417,7 @@
     
     #slide{
         width: 75%;
-        margin: 20px auto;
+        margin: 0 auto 20px;
     }
     #sldcards {
         display: grid;
@@ -340,7 +434,7 @@
         grid-column: span 3;
     }
     .sldcard:nth-child(-n+2) .cardsekil img {
-        width: 260px;
+        width:100%;
     }
     .cardsekil img {
         width: 100%;
@@ -351,7 +445,59 @@
         line-height: 20px;
     }
     .sldcard:nth-child(n+3) .cardyazip {
+        width: 100%;
+    }
+    .mobilappbaslig h2{
+        font-size: 3.5em;
+        font-weight: 600;
+        line-height: 64px;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 712px;
+    }
+    .mobilappbaslig p{
+        font-size: 1.1em;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        font-style: normal;
+        margin-bottom: 40px;
+    }
+    .appbadgeicon {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: center;
+        height: 144px;
+    }
+    .qr{
+        display: block;
+    }
+    .qr img{
+        width: 144px;
+        height: 144px;
+    }
+    #iphonesekil img{
+        width: 360px;
+    }
+    #iphonesekil{
+        text-align: center;
+    }
+    #mobilapp{
+        background-image: url("https://birbank.az/file/mobile_widget_bg_0f0cb4d27c.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+}
+
+
+
+
+
+@media (min-width: 295px) and (max-width: 315px) {
+    .cardsekil img {
         width: 130px;
     }
-    
 }
