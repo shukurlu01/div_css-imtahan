@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -291,6 +292,636 @@ body{
     flex-direction: column;
     gap: 24px;
 }
+.kredithesabibaslig{
+    margin-bottom: 32px;
+}
+.kredithesabibaslig h2{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.btnkredit{
+    height: 44px;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 8px;
+    padding: 12px;
+    border: none;
+    background: none;
+}
+#active{
+    background: #25282b;
+    color: white;
+}
+
+.calc-form, .calc-result {
+    width: 100%;
+}
+.calc-range::-webkit-slider-thumb {
+    background: #fff;
+    border: 3px solid #ee3243;
+}
+
+.bannercard {
+    max-width: 1180px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.banner-card {
+    background-color: #26292b;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 36px 28px 0 28px;
+    overflow: hidden;
+}
+
+.bannercontent {
+    width: 100%;
+    padding-bottom: 28px;
+    color: #ffffff;
+}
+.bannerh2 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 16px;
+}
+.banneraciglama {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #e2e4e6;
+    margin-bottom: 32px;
+    font-weight: 400;
+}
+.bannerbtn {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    border: none;
+    border-radius: 10px;
+    height: 56px;
+    width: 233px;
+    margin-top: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow {
+    font-size: 22px;
+}
+.bannerimg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+}
+.bannerimg img {
+    display: block;
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+.cardbaslig h3{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #25282b;
+}
+.cardbaslig p{
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 140px;
+    margin-top: 16px;
+    font-family: "inter", "inter Fallback";
+}
+.cardbtn{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #ec3342;
+    display: flex;
+    align-items: center;
+}
+#card1{
+    background: #fdf0f1;
+    border-radius: 10px;
+    position: relative;
+    padding: 24px 16px;
+    margin-bottom: 24px;
+}
+#card1 img{
+    width: 130px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#card2{
+    background-image: url("https://birbank.az/file/birbank_kampaniyalar_ee36563933.webp");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 24px 16px;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+#card2 a{
+    justify-content: center;
+    width: 152px;
+    height: 44px;
+    background-color: white;
+    border-radius: 8px;
+}
+#card3{
+    background: #f3f3f5;
+    border-radius: 10px;
+    position: relative;
+    padding: 24px 16px;
+}
+#card3 img{
+    width: 130px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.news {
+    max-width: 1180px;
+    margin: 48px auto;
+    padding: 0 20px;
+}
+.newsheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.newsh2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1c1e20;
+}
+.newsetrafli {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #d92d20;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.newsetrafli:hover {
+    text-decoration: underline;
+}
+.news-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.news-card {
+    width: 100%;
+    border-bottom: 1px solid #f3f3f5;
+    border-radius: 10px;
+}
+.cardlink {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.newsimg {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #f5f6f7;
+    margin-bottom: 14px;
+}
+.newsimg img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.newscontent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+}
+.news-title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.45;
+    color: #1c1e20;
+}
+.news-date {
+    font-size: 13px;
+    color: #8c939a;
+}
+
+.services-section {
+    max-width: 1180px;
+    margin: 48px auto;
+    padding: 0 20px;
+}
+.services-heading {
+    color: #1c1e20;
+    margin-bottom: 24px;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+}
+.services-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.currency-card {
+    background-color: #f9f9fa;
+    border-radius: 20px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.currencytitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1c1e20;
+    margin-bottom: 16px;
+}
+.xidmetbtn {
+    display: flex;
+    margin-bottom: 20px;
+}
+.basbtn {
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #8c939a;
+    padding: 8px 24px;
+    line-height: 20px;
+}
+.basbtn.active {
+    background-color: #26292b;
+    color: #ffffff;
+}
+.currencytable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+.currencytable th {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1c1e20;
+    padding-bottom: 14px;
+}
+.currencytable td {
+    padding: 12px 0;
+    font-size: 14px;
+    color: #1c1e20;
+}
+.currencyname {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+.bayrag {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 2px;
+    display: block;
+}
+.currencyayag {
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+}
+.currency-date {
+    color: #80858a;
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    margin: auto 0;
+}
+.butunmezenne {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #d92d20;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+.servicescard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.xidmetcards {
+    background-color: #f3f3f5;
+    border-radius: 20px;
+    padding: 0 16px 0 24px;
+    text-decoration: none;
+    overflow: hidden;
+}
+.cardtext {
+    padding: 20px 0;
+}
+.xcardbaslig {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0;
+    color: #25282b;
+}
+.xcardaciglama {
+    color: #55595d;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-top: 10px;
+    max-width: 240px;
+}
+.cardimg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+.cardimg img {
+    display: block;
+    width: 240px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+footer {
+    background: #26292b;
+    color: white;
+    padding: 28px 20px 24px;
+}
+footer ul { list-style: none; }
+footer a { text-decoration: none; }
+
+.footer-container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flogo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+.flogo img {
+    display: block;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+}
+.footer-nav {
+    width: 100%;
+    padding: 0 16px;
+}
+.footer-col li a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: white;
+}
+.footer-col li a:hover {
+    color: #f0344f;
+}
+
+@media (max-width: 1023px) {
+    footer {
+        background: #26292b;
+        color: white;
+        padding: 28px 20px 24px;
+    }
+    .footer-container { 
+        max-width: 1180px;
+        margin: 0 auto; 
+    }
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .flogo { 
+        display: flex; 
+        justify-content: center; 
+        margin-bottom: 36px;
+    }
+    .flogo img { display: block;
+        width: 250px;
+        max-width: 100%;
+        height: auto;
+    }
+    .footer-nav { 
+        width: 100%;
+        padding: 0 16px; 
+    }
+    .footer-col li a {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.3;
+        color: white;
+    }
+    .footer-col li a:hover {
+        color:  #f0344f;
+    }
+    .footer-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 26px;
+        column-gap: 12px;
+    }
+    .footer-col { 
+        display: contents;
+    }
+    #fc1 li:nth-child(1){order: 1;}
+    #fc1 li:nth-child(2){order: 4;}
+    #fc1 li:nth-child(3){order: 7;}
+    #fc1 li:nth-child(4){order: 10;}
+    #fc1 li:nth-child(5){order: 13;}
+    
+    .footer-col:nth-child(2) li:nth-child(1){order: 2;}
+    .footer-col:nth-child(2) li:nth-child(2){order: 5;}
+    .footer-col:nth-child(2) li:nth-child(3){order: 8;}
+    .footer-col:nth-child(2) li:nth-child(4){order: 11;}
+    .footer-col:nth-child(2) li:nth-child(5){order: 14;}
+
+    #fc3 li:nth-child(1) { order: 3; }
+    #fc3 li:nth-child(2) { order: 6; }
+    #fc3 li:nth-child(3) { order: 9; }
+    #fc3 li:nth-child(4) { order: 12; }
+    #fc3 li:nth-child(5) { order: 15; }
+    
+    #fc1 li:nth-child(even) {
+        justify-self: end;
+    }
+    .footer-col:nth-child(2) li:nth-child(odd) { 
+        justify-self: end; 
+    }
+    #fc3 li:nth-child(even) {
+        justify-self: end; 
+    }
+}
+
+
+.btndownload {
+    width: 100%;
+    margin-top: 28px;
+}
+.store-buttons {
+    display: flex;
+    gap: 10px;
+}
+.store-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 48px;
+    padding: 0 10px;
+    border: 1px solid #8b8e91;
+    border-radius: 12px;
+    color: white;
+    transition: border-color .2s;
+}
+.store-btn:hover {
+    border-color:white;
+}
+.store-icon { font-size: 24px;
+    color: #f0344f;
+}
+.btntext { display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+}
+.store-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+.store-sub {
+    font-size: 10px;
+    font-weight: 500;
+}
+.footerqr {
+    display: none;
+}
+hr {
+    border: 0;
+    border-top: 1px solid gray;
+    margin: 28px 0 24px;
+}
+.footerbottom {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.footerbottom-right {
+    order: 1;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+    "tel social"
+    "privacy privacy";
+    align-items: center;
+    column-gap: 22px;
+    row-gap: 22px;
+}
+.copyright {
+    order: 2;
+    font-size: 13px;
+    font-weight: 500;
+}
+.tel-link {
+    grid-area: tel;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    color: #f0344f;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+}
+.tel-link i {
+    font-size: 18px;
+}
+.tel-link span {
+    text-decoration: underline;
+}
+.sosialsebeke {
+    grid-area: social;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sosial-logo {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color: white;
+    transition: color .2s;
+}
+.sosial-logo:hover {
+    color: #f0344f;
+}
+.sosial-logo:first-child {
+    background: #ec3342;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.sosial-logo:first-child:hover {
+    color: white;
+    opacity: .85;
+}
+.privacy-link {
+    grid-area: privacy;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: white;
+}
+
+
+
+
+
+
 
 
 
@@ -490,6 +1121,428 @@ body{
         background-position: center top;
         background-size: cover;
     }
+    
+    #kredithesabi > .container {
+        max-width: 960px;
+    }
+    .kredithesabibaslig {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .calc-result {
+        width: 33%;
+        margin-top: 3em;
+    }
+    .calc-form, .calc-result {
+        width: 30%;
+    }
+
+    .banner-card{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 48px 56px 0 56px;
+    }
+    .bannercontent {
+        max-width: 500px;
+        padding-bottom: 48px;
+    }
+    .bannerh2{
+        font-size: 2em;
+    }
+    .bannerimg{
+        width: auto;
+        justify-content: flex-end;
+        margin-right: 16px;
+    }
+    .bannerimg img{
+        width: 310px;
+    }
+    
+    #uccard > .container{
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        gap: 24px;
+        grid-template-rows: auto;
+        max-width: 1128px;
+    }
+    #card1{
+        grid-area: 1/1/2/2;
+        height: 280px;
+        padding: 24px 0 24px 40px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #card1 img, #card2 img{
+        width: 200px;
+    }
+    #card1 h3, #card2 h3, #card3 h3 {
+        font-size: 42px;
+        font-weight: 500;
+        line-height: 50px;
+        color: #25282b;
+        margin: 0;
+    }
+    #card1 p, #card2 p, #card3 p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #25282b;
+        margin-top: 16px;
+        max-width: 260px;
+    }
+    #card2{
+        grid-area: span 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    
+    #card3{
+        grid-area: 2/1/3/2;
+        height: 280px;
+        padding: 24px 0 24px 40px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .newsh2 {
+        font-size: 28px;
+    }
+    .news-grid {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 24px;
+    }
+    .news-card {
+        flex: 1 1 0;
+    }
+
+    .services-section {
+        max-width: 1180px;
+        margin: 48px auto;
+        padding: 0 20px;
+    }
+    .services-heading {
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+    .services-layout {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 24px;
+    }
+    .currency-card {
+        flex: 1 1 0;
+        padding: 32px;
+    }
+    .currencytitle {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+    .xidmetbtn {
+        margin-bottom: 22px;
+    }
+    .basbtn {
+        padding: 10px 22px;
+        font-size: 14px;
+    }
+    .currencytable th {
+        font-size: 14px;
+        padding-bottom: 16px;
+    }
+    .currencytable td {
+        padding: 14px 0;
+        font-size: 16px;
+    }
+    .bayrag {
+        width: 28px;
+        height: 19px;
+    }
+    .currencyayag {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .currency-date {
+        font-size: 13px;
+    }
+    .butunmezenne {
+        font-size: 14px;
+    }
+    .servicescard {
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+    }
+    .xidmetcards {
+        flex: 1 1 0;
+        height: auto;
+        min-height: 0;
+        padding: 0 24px 0 32px;
+        align-items: center;
+        position: relative;
+    }
+    .cardtext {
+        max-width: 56%;
+        padding: 20px 0;
+    }
+    .xcardbaslig {
+        font-size: 22px;
+        margin-bottom: 8px;
+        font-weight: 500;
+    }
+    .xcardaciglama {
+        font-size: 14px;
+        line-height: 1.45;
+    }
+    .cardimg {
+        position: absolute;
+        bottom: 0;
+        width: 240px;
+        right: 40px;
+    }
+    
+    /*footer {
+        background-color: #25282b;
+        color: #ffffff;
+        width: 100%;
+    }
+    .footer-container {
+        margin: 0 auto;
+        padding: 40px 100px 32px 220px;
+    }
+    .footer-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 32px;
+    }
+    .flogo img {
+        display: block;
+        width: 90%;
+        height: 100%;
+    }
+    .footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+    }
+    .footer-col {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .footer-col a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        width: max-content;
+
+    }
+    .footer-col a:hover {
+        text-decoration: underline;
+    }
+    .btndownload {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+    .store-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .store-btn {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border: 1px solid #484c50;
+        border-radius: 10px;
+        padding: 8px 16px;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .store-icon {
+        font-size: 22px;
+    }
+    .apple-icon, .play-icon {
+        color: #f42442;
+    }
+    .btntext {
+        display: flex;
+        flex-direction: column;
+    }
+    .store-title {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+    .store-sub {
+        font-size: 10px;
+        color: #b5b9bd;
+        margin-top: 2px;
+    }
+    .footerqr {
+        background-color: transparent;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footerqr img {
+        display: block;
+        width: 108px;
+        height: 108px;
+        object-fit: contain;
+    }
+    .footerbottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    .copyright {
+        font-size: 13px;
+        color: white;
+    }
+    .footerbottom-right {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+    .privacy-link {
+        color: #fff;
+        text-decoration: underline;
+        font-size: 13px;
+    }
+    .tel-link {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #ec3342;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .tel-link i {
+        font-size: 16px;
+    }
+    .sosialsebeke {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+    .sosial-logo {
+        color: #ffffff;
+        font-size: 19px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }*/
+
+    footer { 
+        padding: 48px 40px 28px;
+    }
+
+    .footer-top {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .flogo { 
+        margin-bottom: 0; 
+    }
+    .flogo img { 
+        width: 160px; 
+    }
+
+    .footer-nav {
+        width: auto;
+        padding: 0; 
+        display: flex; 
+        gap: 72px; }
+    .footer-col { 
+        display: flex;
+        flex-direction: column;
+        gap: 18px; }
+    .footer-col li a { 
+        font-size: 15px; 
+    }
+    .btndownload {
+        width: auto;
+        margin-top: 0;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .store-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .store-btn {
+        flex: none;
+        width: 200px;
+        justify-content: flex-start;
+        padding: 0 16px;
+    }
+    .footerqr {
+        display: block; 
+    }
+    .footerqr img { 
+        display: block; 
+        width: 96px; 
+        height: 96px;
+    }
+    hr { margin: 36px 0 24px; }
+    .footerbottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .copyright { 
+        order: 0;
+    }
+    .footerbottom-right {
+        order: 0;
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    .tel-link { 
+        flex-direction: row; 
+        gap: 8px; 
+        font-size: 16px; 
+    }
+    .tel-link i { 
+        font-size: 14px;
+    }
+    .sosialsebeke { 
+        gap: 16px;
+    }
+    .sosial-logo { 
+        font-size: 22px; 
+    }
+    .sosial-logo:first-child {
+        font-size: 18px; 
+    }
+
 }
 
 
