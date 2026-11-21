@@ -6,6 +6,63 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.chat-btn {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 9999;
+    display: block;
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+.chat-btn img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.chat-btn:active {
+    transform: scale(0.95);
+}
+
+.accessibility-btn {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    z-index: 9999;
+    width: 44px;
+    height: 44px;
+    background-color: #fff;
+    color: #b80d28;
+    border: 2px solid #b80d28;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+.accessibility-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+.accessibility-btn:hover {
+    transform: scale(1.07);
+    background-color: #b80d28;
+    color: #ffffff;
+    border-color: #b80d28;
+}
+
 header {
     position: sticky;
     top: 0;
@@ -342,7 +399,7 @@ body{
 .bannercontent {
     width: 100%;
     padding-bottom: 28px;
-    color: #ffffff;
+    color: #fff;
 }
 .bannerh2 {
     font-size: 26px;
@@ -472,13 +529,13 @@ body{
 .newsh2 {
     font-size: 24px;
     font-weight: 700;
-    color: #1c1e20;
+    color: #222;
 }
 .newsetrafli {
     display: flex;
     align-items: center;
     gap: 6px;
-    color: #d92d20;
+    color: #ec3342;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
@@ -559,7 +616,7 @@ body{
 .currencytitle {
     font-size: 18px;
     font-weight: 500;
-    color: #1c1e20;
+    color: #222;
     margin-bottom: 16px;
 }
 .xidmetbtn {
@@ -572,14 +629,14 @@ body{
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: #fff;
     color: #8c939a;
     padding: 8px 24px;
     line-height: 20px;
 }
 .basbtn.active {
     background-color: #26292b;
-    color: #ffffff;
+    color: #fff;
 }
 .currencytable {
     width: 100%;
@@ -590,13 +647,13 @@ body{
     text-align: left;
     font-size: 13px;
     font-weight: 600;
-    color: #1c1e20;
+    color: #222;
     padding-bottom: 14px;
 }
 .currencytable td {
     padding: 12px 0;
     font-size: 14px;
-    color: #1c1e20;
+    color: #222;
 }
 .currencyname {
     display: flex;
@@ -627,7 +684,7 @@ body{
     display: flex;
     align-items: center;
     gap: 6px;
-    color: #d92d20;
+    color: #ec3342;
     text-decoration: none;
     font-size: 13px;
     font-weight: 600;
@@ -715,7 +772,7 @@ footer a { text-decoration: none; }
     color: white;
 }
 .footer-col li a:hover {
-    color: #f0344f;
+    text-decoration: underline;
 }
 
 @media (max-width: 1023px) {
@@ -754,7 +811,7 @@ footer a { text-decoration: none; }
         color: white;
     }
     .footer-col li a:hover {
-        color:  #f0344f;
+        text-decoration: underline;
     }
     .footer-nav {
         display: grid;
@@ -777,11 +834,11 @@ footer a { text-decoration: none; }
     .footer-col:nth-child(2) li:nth-child(4){order: 11;}
     .footer-col:nth-child(2) li:nth-child(5){order: 14;}
 
-    #fc3 li:nth-child(1) { order: 3; }
-    #fc3 li:nth-child(2) { order: 6; }
-    #fc3 li:nth-child(3) { order: 9; }
-    #fc3 li:nth-child(4) { order: 12; }
-    #fc3 li:nth-child(5) { order: 15; }
+    #fc3 li:nth-child(1) {order: 3;}
+    #fc3 li:nth-child(2) {order: 6;}
+    #fc3 li:nth-child(3) {order: 9;}
+    #fc3 li:nth-child(4) {order: 12;}
+    #fc3 li:nth-child(5) {order: 15;}
     
     #fc1 li:nth-child(even) {
         justify-self: end;
@@ -816,10 +873,8 @@ footer a { text-decoration: none; }
     color: white;
     transition: border-color .2s;
 }
-.store-btn:hover {
-    border-color:white;
-}
-.store-icon { font-size: 24px;
+.store-icon { 
+    font-size: 24px;
     color: #f0344f;
 }
 .btntext { display: flex;
@@ -926,6 +981,29 @@ hr {
 
 
 @media only screen and (min-width: 992px) {
+    .chat-btn {
+        right: 32px;
+        bottom: 32px;
+        width: 76px;
+        height: 76px;
+    }
+    .chat-btn:hover {
+        transform: scale(1.15);
+    }
+
+    .accessibility-btn {
+        bottom: 24px;
+        left: 24px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .accessibility-btn svg {
+        width: 28px;
+        height: 28px;
+    }
+    
+    
     header {
         position: sticky;
         top: -50px;
@@ -1121,7 +1199,6 @@ hr {
         background-position: center top;
         background-size: cover;
     }
-    
     #kredithesabi > .container {
         max-width: 960px;
     }
@@ -1312,7 +1389,6 @@ hr {
         right: 40px;
     }
     
-
     footer { 
         padding: 48px 40px 28px;
     }
@@ -1325,8 +1401,9 @@ hr {
     .flogo { 
         margin-bottom: 0; 
     }
-    .flogo img { 
-        width: 160px; 
+    .logo12 {
+        width: 260px;
+        height: 64px;
     }
     .footer-nav {
         width: auto;
@@ -1409,5 +1486,8 @@ hr {
 @media (min-width: 295px) and (max-width: 315px) {
     .cardsekil img {
         width: 130px;
+    }
+    .sosial-logo{
+        width: 20px;
     }
 }
