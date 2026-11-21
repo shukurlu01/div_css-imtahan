@@ -1312,154 +1312,10 @@ hr {
         right: 40px;
     }
     
-    /*footer {
-        background-color: #25282b;
-        color: #ffffff;
-        width: 100%;
-    }
-    .footer-container {
-        margin: 0 auto;
-        padding: 40px 100px 32px 220px;
-    }
-    .footer-top {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 32px;
-    }
-    .flogo img {
-        display: block;
-        width: 90%;
-        height: 100%;
-    }
-    .footer-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 60%;
-    }
-    .footer-col {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-    .footer-col a {
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 500;
-        width: max-content;
-
-    }
-    .footer-col a:hover {
-        text-decoration: underline;
-    }
-    .btndownload {
-        flex: 0 0 auto;
-        display: flex;
-        align-items: center;
-        gap: 14px;
-    }
-    .store-buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    .store-btn {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        border: 1px solid #484c50;
-        border-radius: 10px;
-        padding: 8px 16px;
-        text-decoration: none;
-        color: #ffffff;
-    }
-    .store-icon {
-        font-size: 22px;
-    }
-    .apple-icon, .play-icon {
-        color: #f42442;
-    }
-    .btntext {
-        display: flex;
-        flex-direction: column;
-    }
-    .store-title {
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 1.2;
-    }
-    .store-sub {
-        font-size: 10px;
-        color: #b5b9bd;
-        margin-top: 2px;
-    }
-    .footerqr {
-        background-color: transparent;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .footerqr img {
-        display: block;
-        width: 108px;
-        height: 108px;
-        object-fit: contain;
-    }
-    .footerbottom {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0;
-    }
-    .copyright {
-        font-size: 13px;
-        color: white;
-    }
-    .footerbottom-right {
-        display: flex;
-        align-items: center;
-        gap: 28px;
-    }
-    .privacy-link {
-        color: #fff;
-        text-decoration: underline;
-        font-size: 13px;
-    }
-    .tel-link {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        color: #ec3342;
-        font-size: 20px;
-        font-weight: 700;
-    }
-    .tel-link i {
-        font-size: 16px;
-    }
-    .sosialsebeke {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-    }
-    .sosial-logo {
-        color: #ffffff;
-        font-size: 19px;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }*/
 
     footer { 
         padding: 48px 40px 28px;
     }
-
     .footer-top {
         flex-direction: row;
         justify-content: space-between;
@@ -1472,16 +1328,17 @@ hr {
     .flogo img { 
         width: 160px; 
     }
-
     .footer-nav {
         width: auto;
         padding: 0; 
         display: flex; 
-        gap: 72px; }
+        gap: 72px;
+    }
     .footer-col { 
         display: flex;
         flex-direction: column;
-        gap: 18px; }
+        gap: 18px; 
+    }
     .footer-col li a { 
         font-size: 15px; 
     }
